@@ -13,7 +13,7 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '&D5bY9KL lD(GDIeP<CzrV[Ji+=TR[u<;BJrFb8 gy,/T.0>p*o&^~K7`WiiWlxZ');
-define('SECURE_AUTH_KEY',  'NR;@e/,/!cqzLP@+`CbQ5 #02LWT.uqnE**&(n#V2%XSK[}zV_{92@M}x5S&=d?<');
-define('LOGGED_IN_KEY',    ']2,WH2?ObnBe{1dSO#lS0~GnM/FLr%{twy*:Z_@a<W_6tI0E$p[^[t#]K#|IgZHm');
-define('NONCE_KEY',        'zB:L9ImjnO2Jy7wS2<*>=u~EH_gCVY}oEM#7H7Bi{S-~zC89ssDkEE5wd%?Kg6<7');
-define('AUTH_SALT',        'N{OuK9:[ GVte*?6=%3OsNKjz1P=O*vL5<>b-gogEuR.effx%kgI-Y3S7|P_+[ne');
-define('SECURE_AUTH_SALT', '-`tF}YpjS^OkC%xP^NEt|PlNP4bTdrl`R,R&zb;=4iUG2e9EW;0LQ70YSFKq^<[&');
-define('LOGGED_IN_SALT',   'IYl(@rblISw?to/DR+N{D<:c48Ex,4$F]J(Cd:BH0K7a5g*|)Xn*r!~W*-^;wcwN');
-define('NONCE_SALT',       '+:WvG7k4%NC3bq!1oqXK{+Sf!kh8v|b(DU{{YDRgEk3})&]I0N`egT7bEJCPymX.');
+define( 'AUTH_KEY',         ';YllTNuqXX~nA:Ef8:0}*pEMIaLk=&PfRB;z:CE8BuuB%T-JTmy4_vKdgt&HOX),' );
+define( 'SECURE_AUTH_KEY',  'YVoST 2S2Syo`D;T/95LC/pND*$;{0$+$3pj+W8MbnTjd9SLE5=]BhvRZa/6a2K{' );
+define( 'LOGGED_IN_KEY',    '~>PzVEYcuyU1Y]]D>Km6mzkS/vI^WpC=bkdtdi=oul`Z5iY:&v<OOz3#Piq8Uj0!' );
+define( 'NONCE_KEY',        'bD-FV/W8JIW|)pjmU7pj~^%mX_>@~{?<Jyn+Um_;&j6a1A_LD%zxM 5.@WVykv(O' );
+define( 'AUTH_SALT',        'nJtkPZ8P@Yf]b8)?8TTPB^cU<vj84slVk&,54=4.&cxbUBqj!]=M=Lh*~#S{y]_T' );
+define( 'SECURE_AUTH_SALT', ':zlr#1g]7egckj#@<HFBB@vS:rd*O@yT7Y^nm#TRQ^9Q=p1:t16Zr: j|vnLh]{]' );
+define( 'LOGGED_IN_SALT',   '(!3`W$`-`XnVwdGc]^#qoJV`nG_wnJK s#$!r?5XE`Pya$9[z-t~!3-,YPZ5PzfS' );
+define( 'NONCE_SALT',       'zA+VjH<it@P$oe=2[[FDq(QSF?j[PcI!:lc%P0_wE_X^vY/*lwYzm=od%$nK];y3' );
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       '+:WvG7k4%NC3bq!1oqXK{+Sf!kh8v|b(DU{{YDRgEk3})&]I0N`e
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp2_';
+$table_prefix = 'wp2_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -73,18 +73,18 @@ $table_prefix  = 'wp2_';
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the Codex.
+ * visit the documentation.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define('WP_DEBUG', true);
+define( 'WP_DEBUG', true );
 
-/* That's all, stop editing! Happy blogging. */
+/* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
 
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
-
+require_once ABSPATH . 'wp-settings.php';
