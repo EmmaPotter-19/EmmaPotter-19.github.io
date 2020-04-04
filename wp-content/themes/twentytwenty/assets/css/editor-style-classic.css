@@ -30,14 +30,14 @@ Inter variable font. Usage:
 	font-family: "Inter var";
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: normal;
-	src: url(https://emmapotter-19.github.io/wp-content/themes/twentytwenty/assets/fonts/inter/Inter-upright-var.woff2) format("woff2");
+	src: url(../fonts/inter/Inter-upright-var.woff2) format("woff2");
 }
 
 @font-face {
 	font-family: "Inter var";
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: italic;
-	src: url(https://emmapotter-19.github.io/wp-content/themes/twentytwenty/assets/fonts/inter/Inter-italic-var.woff2) format("woff2");
+	src: url(../fonts/inter/Inter-italic-var.woff2) format("woff2");
 }
 
 /* Structure --------------------------------- */
@@ -246,6 +246,7 @@ body#tinymce.wp-editor.content h6 {
 /* Blockquote -------------------------------- */
 
 body#tinymce.wp-editor.content blockquote {
+	border-style: solid;
 	border: none;
 	border-left: 2px solid #cd2653;
 	margin: 0 0 1.6em 0;
